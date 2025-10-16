@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABES Engineering College</title>
+</head>
+<body>
+    <h1>ABES Engineering College - CSE Syllabus Overview</h1>
+    <p>This page shows a brief overview of the Computer Science Engineering syllabus.</p>
+
+    <h2>Core Subjects</h2>
+    <ul>
+        <li>Applied Mathematics</li>
+        <li>Programming Languages (Java, C++)</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Operating Systems</li>
+        <li>Database Management Systems</li>
+    </ul>
+
+    <h2>Advanced Topics</h2>
+    <ul>
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>Computer Networks</li>
+        <li>Software Testing & Quality Assurance</li>
+        <li>Web Engineering</li>
+    </ul>
+
+    <p>For the full syllabus, visit the official ABES website.</p>
+</body>
+<body>
+    <h1>Visit Google</h1>
+    <p>Click here to go to <a href="https://www.google.com" target="_blank">Google</a>.</p>
+</body>
+</html>
