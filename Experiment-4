@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hotel Room Booking Form</title>
+    <title>Abes Student login</title>
     
 </head>
 <body>
     <div class="form-container">
-        <h2>Hotel Room Booking Form</h2>
+      <center><h2>Student Registration Form</h2></center>
+        <center>
         <form>
-            <label for="name">Full Name:</label>
+            <label for="name">Student Name:</label>
             <input type="text" id="name" name="name"><br>
 
             <label for="email">Email:</label>
@@ -17,19 +18,45 @@
             <label for="phone">Phone:</label>
             <input type="text" id="phone" name="phone"><br>
 
-            <label for="checkin">Check-in Date:</label>
-            <input type="date" id="checkin" name="checkin"><br>
+            <label for="Password">Create Password:</label>
+            <input type="password" id="password" name="password"><br>
 
-            <label for="checkout">Check-out Date:</label>
-            <input type="date" id="checkout" name="checkout"><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br>
 
-            <label for="roomtype">Room Type:</label>
-            <select id="roomtype" name="roomtype">
-                <option>Single Room</option>
-                <option>Double Room</option>
-                <option>Suite</option>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender type">
+                <option>Male</option>
+                <option>Female</option>
+                <select> 
+                <button type="select">Select</button>
+               </select><br>
+            
+            <label for="year">Year:</label>
+            <select id="year" name="year">
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+                 <select> 
+                <button type="select">Select</button>
             </select><br>
-        </form>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch">
+                <option>Computer Science</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+                 <select> 
+                <button type="select">Select</button>
+            </select><br>
+
+            </center>
+            <center>
+            <div class="button-container">
+                <button type="login">LOGIN</button>
+                </center>
     </div>
 </body>
 </html>
