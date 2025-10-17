@@ -10,19 +10,19 @@
         <center>
         <form>
             <label for="name">Student Name:</label>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name"><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
+            <input type="email" id="email" name="email"><br><br>
 
             <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone"><br>
+            <input type="text" id="phone" name="phone"><br><br>
 
             <label for="Password">Create Password:</label>
-            <input type="password" id="password" name="password"><br>
+            <input type="password" id="password" name="password"><br><br>
 
             <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password"><br>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="example@gmail.com"><br><br>
 
             <label for="gender">Gender:</label>
             <select id="gender" name="gender type">
@@ -30,7 +30,7 @@
                 <option>Female</option>
                 <select> 
                 <button type="select">Select</button>
-               </select><br>
+               </select><br><br>
             
             <label for="year">Year:</label>
             <select id="year" name="year">
@@ -38,9 +38,9 @@
                 <option>Second Year</option>
                 <option>Third Year</option>
                 <option>Fourth Year</option>
-                 <select> 
+                 <select>
                 <button type="select">Select</button>
-            </select><br>
+            </select><br><br>
 
             <label for="branch">Branch:</label>
             <select id="branch" name="branch">
@@ -50,7 +50,7 @@
                 <option>Civil</option>
                  <select> 
                 <button type="select">Select</button>
-            </select><br>
+            </select><br><br>
 
             </center>
             <center>
