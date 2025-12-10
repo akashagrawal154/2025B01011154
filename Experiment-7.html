@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navigation Menu </title>
+  <style>
+    header {
+      display: block;                
+      background-color: #1b4b9c;
+      color: #fff;
+      padding: 12px 20px;
+      font-family: Arial, sans-serif;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    .top-info {
+      background-color: #e8edf9;
+      padding: 6px 20px;
+      font-size: 13px;
+    }
+    .top-info span {
+      margin-right: 12px;
+    }
+    .top-info a {
+      display: inline;             
+      color: #1b4b9c;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .top-info a:hover {
+      text-decoration: underline;
+    }
+    nav {
+      background-color: #12233d;
+      overflow: hidden;            
+    }
+    .nav-logo {
+      float: left;                 
+      color: #fff;
+      padding: 12px 20px;
+      font-weight: bold;
+    }
+    .nav-search {
+      float: right;              
+      padding: 12px 20px;
+    }
+    .nav-search input {
+      padding: 6px 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .clear {
+      clear: both;                   
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0 10px 10px 10px;
+      text-align: center;
+    }
+    .menu li {
+      display: inline-block;        
+      margin: 0 8px;
+    }
+    .menu a {
+      display: inline-block;        
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 3px;
+    }
+    .menu a:hover {
+      background-color: #1b4b9c;
+    }
+    .content {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  <div class="top-info">
+    <span>Welcome guest!</span>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+  </div>
+  <nav>
+    <div class="nav-logo">LOGO</div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search…">
+    </div>
+    <div class="clear"></div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    This page demonstrates: header as a block element, small links as inline elements, menu items as inline-block elements, and logo/search aligned using float with a clear to stop text wrapping.
+  </div>
+</body>
+</html>

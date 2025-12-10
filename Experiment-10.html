@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>XSport Cars</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.5rem;
+      background: #020617;
+      color: #f9fafb;
+    }
+    .nav-logo {
+      font-weight: 800;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: #f97316;
+      letter-spacing: 0.08em;
+    }
+    .nav-logo span {
+      color: #e5e7eb;
+      font-weight: 500;
+      font-size: 0.8rem;
+      margin-left: 0.3rem;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.3rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      position: relative;
+      padding-bottom: 0.15rem;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #f97316;
+      transition: width 0.25s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-search input {
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: none;
+      outline: none;
+      font-size: 0.9rem;
+      width: 180px;
+    }
+    .nav-icon {
+      text-decoration: none;
+      color: #f9fafb;
+      font-size: 1.1rem;
+    }
+    .menu-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      color: #f9fafb;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: #020617;
+      padding: 0.5rem 1.5rem;
+    }
+    .mobile-menu a {
+      text-decoration: none;
+      color: #e5e7eb;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #111827;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.9rem;
+    }
+    .mobile-menu a:last-child {
+      border-bottom: none;
+    }
+    .mobile-menu.open {
+      display: flex;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .nav-search {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+    @media (max-width: 480px) {
+      .navbar {
+        padding: 0.6rem 1rem;
+      }
+      .mobile-menu {
+        padding: 0.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="nav-logo">XSPORT<span>Performance Cars</span></a>
+    <nav class="nav-links">
+      <a href="#">All Cars</a>
+      <a href="#">SUVs</a>
+      <a href="#">Sedans</a>
+      <a href="#">Hatchbacks</a>
+      <a href="#">EV & Hybrid</a>
+      <a href="#">Luxury</a>
+    </nav>
+    <div class="nav-right">
+      <div class="nav-search">
+        <input type="text" placeholder="Search XSport models" />
+      </div>
+      <a href="#" class="nav-icon">🔍</a>
+      <a href="#" class="nav-icon">❤</a>
+      <a href="#" class="nav-icon">👤</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+  <nav class="mobile-menu">
+    <a href="#">All Cars</a>
+    <a href="#">SUVs</a>
+    <a href="#">Sedans</a>
+    <a href="#">Hatchbacks</a>
+    <a href="#">EV & Hybrid</a>
+    <a href="#">Luxury</a>
+  </nav>
+<h1>Welcome to XSport Cars</h1>
+<p>Discover the ultimate performance and luxury with XSport's exclusive range of cars.
+    From sleek sedans to powerful SUVs, we have the perfect vehicle to match your style and needs. Explore our collection and experience driving like never before.
+    Owner-Akash Agrawal
+</p>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    toggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

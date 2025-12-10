@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AKMotorsport - Cars on Sale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      background: #ffffff;
+      color: #111827;
+      padding: 1.5rem;
+    }
+    .page-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .brand-name {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #f97316;
+    }
+    .brand-tagline {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      justify-content: center;
+    }
+    .car-card {
+      background: #ffffff;
+      border-radius: 0.9rem;
+      border: 1px solid #e5e7eb;
+      padding: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 320px;
+      flex: 1 1 100%;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    }
+    .car-image {
+      width: 100%;
+      height: 180px;
+      border-radius: 0.7rem;
+      margin-bottom: 0.75rem;
+      object-fit: cover;
+    }
+    .car-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+      color: #111827;
+    }
+    .car-brand {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 0.25rem;
+    }
+    .car-meta {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-bottom: 0.4rem;
+    }
+    .car-price {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #16a34a;
+      margin-bottom: 0.6rem;
+    }
+    .car-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .btn {
+      flex: 1 1 auto;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      border: none;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    }
+    .btn-primary {
+      background: #111827;
+      color: #f9fafb;
+      font-weight: 600;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #111827;
+      border: 1px solid #d1d5db;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 12px rgba(15, 23, 42, 0.12);
+    }
+    @media (min-width: 600px) {
+      .car-card {
+        flex: 1 1 calc(50% - 1.25rem);
+      }
+    }
+    @media (min-width: 900px) {
+      .car-card {
+        flex: 1 1 calc(33.333% - 1.25rem);
+      }
+    }
+    @media (min-width: 1200px) {
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .car-card {
+        flex: 1 1 calc(33.333% - 1.25rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div class="brand-name">AKMOTORSPORT</div>
+    <p class="brand-tagline">Trusted family & city cars on sale</p>
+  </header>
+  <section class="product-grid">
+    <article class="car-card">
+      <img src="https://acnews.blob.core.windows.net/imggallery/1024x768/GAZ_27db2fd85ffb40bea2c29959f0153dec.webp" alt="Maruti Suzuki Swift" class="car-image" />
+      <h2 class="car-name">Maruti Suzuki Swift</h2>
+      <p class="car-brand">AKMotorsport · Hatchback</p>
+      <p class="car-meta">1.2L petrol · Manual / AMT</p>
+      <p class="car-price">Starting from ₹6,00,000</p>
+      <div class="car-actions">
+        <button class="btn btn-primary">Book Test Drive</button>
+        <button class="btn btn-outline">View Details</button>
+      </div>
+    </article>
+    <article class="car-card">
+      <img src="https://imgd-ct.aeplcdn.com/0x0/n/cw/ec/115025/innova-hycross-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75" alt="Toyota Innova Hycross" class="car-image" />
+      <h2 class="car-name">Toyota Innova Hycross</h2>
+      <p class="car-brand">AKMotorsport · Hybrid MPV</p>
+      <p class="car-meta">2.0L hybrid · Automatic · 7/8 seater</p>
+      <p class="car-price">Starting from ₹20,00,000</p>
+      <div class="car-actions">
+        <button class="btn btn-primary">Book Test Drive</button>
+        <button class="btn btn-outline">View Details</button>
+      </div>
+    </article>
+    <article class="car-card">
+      <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/107543/brezza-exterior-right-front-three-quarter-6.jpeg?isig=0&q=80" alt="Maruti Suzuki Brezza" class="car-image" />
+      <h2 class="car-name">Maruti Suzuki Brezza</h2>
+      <p class="car-brand">AKMotorsport · Compact SUV</p>
+      <p class="car-meta">1.5L petrol · Manual / AT</p>
+      <p class="car-price">Starting from ₹9,00,000</p>
+      <div class="car-actions">
+        <button class="btn btn-primary">Book Test Drive</button>
+        <button class="btn btn-outline">View Details</button>
+      </div>
+    </article>
+    <article class="car-card">
+      <img src="https://cdn.autopapo.com.br/box/uploads/2023/04/17171857/honda-city-hatchback-2024-cinza-basalto-frente-parado-1920x1280.jpg" alt="Honda City" class="car-image" />
+      <h2 class="car-name">Honda City</h2>
+      <p class="car-brand">AKMotorsport · Sedan</p>
+      <p class="car-meta">1.5L petrol · Manual / CVT</p>
+      <p class="car-price">Starting from ₹12,00,000</p>
+      <div class="car-actions">
+        <button class="btn btn-primary">Book Test Drive</button>
+        <button class="btn btn-outline">View Details</button>
+      </div>
+    </article>
+    <article class="car-card">
+      <img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/51435/innova-crysta-exterior-right-front-three-quarter-3.jpeg?q=85" alt="Toyota Innova Crysta" class="car-image" />
+      <h2 class="car-name">Toyota Innova Crysta</h2>
+      <p class="car-brand">AKMotorsport · Diesel MPV</p>
+      <p class="car-meta">2.4L diesel · Manual · 7/8 seater</p>
+      <p class="car-price">Starting from ₹19,00,000</p>
+      <div class="car-actions">
+        <button class="btn btn-primary">Book Test Drive</button>
+        <button class="btn btn-outline">View Details</button>
+      </div>
+    </article>
+    <article class="car-card">
+      <img src="https://th.bing.com/th/id/OIP.s6FRQYmGryyJ15z8PV7-SAHaEK?o=7&cb=ucfimg2&rm=3&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tata Nexon" class="car-image" />
+      <h2 class="car-name">Tata Nexon</h2>
+      <p class="car-brand">AKMotorsport · Compact SUV</p>
+      <p class="car-meta">Petrol / Diesel · Manual / AMT / DCA</p>
+      <p class="car-price">Starting from ₹8,00,000</p>
+      <div class="car-actions">
+        <button class="btn btn-primary">Book Test Drive</button>
+        <button class="btn btn-outline">View Details</button>
+      </div>
+    </article>
+  </section>
+</body>
+</html>
